@@ -3,10 +3,10 @@ import socket  # Impor modul socket
 server_socket = socket.socket(
     socket.AF_INET, socket.SOCK_STREAM)  # Buat objek server socket
 # Ikatan server socket ke localhost dan port 8080
-server_socket.bind(('localhost', 8080))
+server_socket.bind(('localhost', 1414))
 server_socket.listen(1)  # Dengarkan koneksi masuk
 # Cetak pesan yang menunjukkan bahwa server sedang mendengarkan di port 8080
-print(f'Server sedang mendengarkan di port 8080')
+print(f'Server sedang mendengarkan di port 1414')
 while True:  # Mulai loop tak terbatas
     client_socket, client_address = server_socket.accept()  # Terima koneksi masuk
     # Terima data dari klien dan decode itu
